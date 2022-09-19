@@ -8,6 +8,7 @@ import { AdministrationComponent } from './pages/administration/administration.c
 import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProfileComponent } from './components/profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
