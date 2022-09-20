@@ -1,0 +1,36 @@
+
+.menu-container {
+  background-color: rgba(20, 64, 207, 0.959);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+.menu-container> a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+  width: 33%;
+  height: 50px;
+}
+
+.menu-container> a:hover {
+  background-color: cadetblue;
+}
+
+.fit {
+  width: 200px;
+  height: 400px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.rigth {
+  right: 10px;
+}

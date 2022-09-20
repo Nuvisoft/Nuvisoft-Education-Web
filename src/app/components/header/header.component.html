@@ -1,9 +1,8 @@
 <header class="default-header">
-    <div class="menu">
+  <div class="menu" (click)="handleMenu()"></div>
 
-    </div>
+  <h2 *ngIf="title.length > 0">{{ title }}</h2>
 
-    <h2 *ngIf="title.length> 0"> {{title}}</h2>
-
-    <comp-profile></comp-profile>
+  <comp-profile></comp-profile>
 </header>
+<comp-navigation-menu [isShowing]="showMenu"></comp-navigation-menu>

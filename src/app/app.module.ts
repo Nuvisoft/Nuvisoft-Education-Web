@@ -9,6 +9,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AdministrationComponent,
     LoginComponent,
     HeaderComponent,
-    ProfileComponent
+    ProfileComponent,
+    NavigationMenuComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
