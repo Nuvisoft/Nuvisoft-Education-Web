@@ -1,0 +1,29 @@
+.admin-container {
+  height: 650px;
+  width: 100%;
+}
+
+.admin-content {
+  display: flex;
+  height: inherit;
+}
+
+.admin-body {
+  text-align: center;
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+
+.menu-item {
+  padding-block: 10px;
+}
+
+.menu-item:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}

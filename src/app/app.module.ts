@@ -18,6 +18,10 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { QuestionComponent } from './components/question/question.component';
 import { IconComponent } from './components/icon/icon.component';
+import { AdminPaymentsComponent } from './pages/children-pages/admin-payments/admin-payments.component';
+import { AdminSchoolComponent } from './pages/children-pages/admin-school/admin-school.component';
+import { AdminClassesComponent } from './pages/children-pages/admin-classes/admin-classes.component';
+import { AdminMembershipComponent } from './pages/children-pages/admin-membership/admin-membership.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +38,10 @@ import { IconComponent } from './components/icon/icon.component';
     ItemProfileComponent,
     QuestionComponent,
     IconComponent,
+    AdminPaymentsComponent,
+    AdminSchoolComponent,
+    AdminClassesComponent,
+    AdminMembershipComponent,
   ],
   imports: [
     BrowserModule,
