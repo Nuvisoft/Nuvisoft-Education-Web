@@ -1,0 +1,35 @@
+.edition-space::-webkit-scrollbar-thumb{
+  background-color: red;
+}
+
+.paper-element {
+  margin: auto;
+  background-color: white;
+  width: 600px;
+  height: 800px;
+  padding: 20px;
+}
+
+.header-student {
+  border-bottom: 1px solid black;
+}
+
+.body-section {
+  padding: 10px;
+}
+
+.assessments-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.drop-area {
+  border: dashed 1px rgb(95, 95, 95);
+  border-radius: 10px;
+  margin-block: 10px;
+}
+
+.item {
+  height: 70px;
+  margin-inline: auto;
+}

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  isLogin = true;
   constructor(
     private router: Router
   ) { }
@@ -23,4 +24,9 @@ export class LoginComponent implements OnInit {
     alert('¡Entidad registrada con éxito!');
     this.signIn();
   }
+
+  changeView(){
+    this.isLogin = !this.isLogin;
+  }
+
 }

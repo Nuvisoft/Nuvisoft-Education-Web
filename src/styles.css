@@ -11,12 +11,15 @@
   width: 300px;
 }
 
-.submit-button {
+.submit-button, .other-button {
   border-radius: 10px;
   height: 30px;
   width: 300px;
-  background-color: #03045e;
   border: none;
+}
+
+.submit-button {
+  background-color: #03045e;
   color: white;
 }
 
@@ -28,6 +31,19 @@
 .submit-button:active {
   background-color: #0e75d4;
   color: white;
+}
+
+.other-button {
+  background-color: white;
+  color: #03045e;
+}
+
+.other-button:hover {
+  background-color: darkgray;
+}
+
+.other-button:active {
+  background-color: rgb(126, 126, 126);
 }
 
 .titles-large {
@@ -55,7 +71,7 @@
   align-self: flex-end;
 }
 
-.footer> .lang-container > select {
+.footer>.lang-container>select {
   background-color: unset;
   color: white;
   width: 200px;

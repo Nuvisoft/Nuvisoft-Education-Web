@@ -2,7 +2,9 @@
 <router-outlet></router-outlet>
 <div class="banner">
   <div class="banner">
-    <p>Aquí va un banner</p>
+    <h2>
+      ¡Es hora de aprender de forma divertida!
+    </h2>
   </div>
 </div>
 <div class="content">
@@ -18,12 +20,13 @@
         type="button"
         class="submit-button"
         value="¡Registra tu colegio aquí!"
+        (click)="goRegister()"
       />
     </div>
-    <div class="picture"></div>
+    <div class="picture img-two"></div>
   </section>
   <section class="section-acknownledgement">
-    <div class="picture"></div>
+    <div class="picture img-one" src=""></div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ratione
       est quaerat quam nihil molestias, odio delectus a fugit recusandae at,

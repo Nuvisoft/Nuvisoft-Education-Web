@@ -1,0 +1,32 @@
+@import url(./../../components/job-paper/job-paper.component.css);
+
+.jobs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edition-space {
+  overflow: scroll;
+  background-color: rgb(204, 201, 201);
+  width: 70%;
+  height: 600px;
+  padding: 20px;
+}
+
+/* This will be passed to another style sheet component--> */
+.ask-list {
+  list-style: none;
+  padding: 0px;
+  min-height: 300px;
+}
+
+.ask-item {
+  /* border-bottom: 1px solid darkgray; */
+  padding: 5px;
+  text-align: center;
+}
+
+.ask-item:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}

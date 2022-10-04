@@ -1,11 +1,12 @@
 <section class="image-background">
 
-    <aside class="form-container" *ngIf="true; else RegisterForm">
+    <aside class="form-container" *ngIf="isLogin; else RegisterForm">
         <h1 class="titles-large text-center">Bienvenido a <br> Nuvisoft Education</h1>
         <form class="form-element" (submit)="signIn()">
             <input type="text" class="default-input" placeholder="Usuario...">
             <input type="text" class="default-input" placeholder="Contraseña...">
             <input type="submit" class="submit-button">
+            <input type="button" class="other-button" value="Registrar colegio" (click)="changeView()">
         </form>
     </aside>
 
@@ -20,6 +21,7 @@
                 <input type="text" class="default-input" placeholder="Contraseña del administrador">
                 <input type="text" class="default-input" placeholder="Eslogan">
                 <input type="submit" class="submit-button">
+            <input type="button" class="other-button" value="Cancelar" (click)="changeView()">
             </form>
         </aside>
     </ng-template>

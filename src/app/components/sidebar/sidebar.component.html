@@ -1,1 +1,19 @@
-<p>sidebar works!</p>
+<aside *ngIf="type === 'detail'; else fit" class="detail-sidebar">
+  <div class="sidebar-title">
+    <P>detail sidebar</P>
+  </div>
+  <hr />
+  <ng-content></ng-content>
+</aside>
+
+<ng-template #fit>
+  <aside [class.content]="isDeployed" class="fit-sidebar">
+    <ul class="categories-list">
+      <li class="category" *ngFor="let category of categories">
+        {{ category.title }}
+      </li>
+    </ul>
+    <hr />
+    <ng-content *ngIf="isDeployed" select="comp-sidebar"></ng-content>
+  </aside>
+</ng-template>

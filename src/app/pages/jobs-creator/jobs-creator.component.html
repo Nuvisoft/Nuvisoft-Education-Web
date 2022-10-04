@@ -1,0 +1,64 @@
+<comp-header title="Creador de trabajos"></comp-header>
+
+<div class="jobs-container">
+  <comp-sidebar type="fit">
+    <comp-sidebar type="detail">
+      <div>
+        <ul
+          class="ask-list"
+          cdkDropList
+          #optionList="cdkDropList"
+          [cdkDropListData]="optionsList"
+          [cdkDropListConnectedTo]="questionList"
+          (cdkDropListDropped)="onDrop($event, false)"
+        >
+          <li
+            class="ask-item"
+            *ngFor="let option of optionsList"
+            (cdkDragExited)="onDraggedExit($event)"
+            cdkDrag
+          >
+            <div *cdkDragPlaceholder>
+              <div class="item drop-area" *ngIf="elementWasDraggedOut"></div>
+            </div>
+            <img *cdkDragPreview src="../../../favicon.ico" alt="algo" />
+
+            {{ option }}
+          </li>
+        </ul>
+      </div>
+    </comp-sidebar>
+  </comp-sidebar>
+
+  <div class="edition-space">
+    <comp-job-paper>
+      <!-- In order of don't show blank page, this will notice to the teacher he must drag a question to the panel -->
+      <p *ngIf="questionsList.length == 0">
+        Arrastre una pregunta del panel de preguntas para construir una
+        asignación.
+      </p>
+      <ul
+        id="paper-questions"
+        class="ask-list"
+        cdkDropList
+        #questionList="cdkDropList"
+        [cdkDropListData]="questionsList"
+        [cdkDropListConnectedTo]="optionList"
+        (cdkDropListDropped)="onDrop($event)"
+      >
+        <li
+          class="item"
+          *ngFor="let question of questionsList"
+          cdkDragBoundary="#paper-questions"
+          cdkDrag
+        >
+          <div class="item drop-area" *cdkDragPlaceholder></div>
+          <comp-question></comp-question>
+        </li>
+      </ul>
+    </comp-job-paper>
+  </div>
+  <comp-sidebar type="detail">
+    <div></div>
+  </comp-sidebar>
+</div>

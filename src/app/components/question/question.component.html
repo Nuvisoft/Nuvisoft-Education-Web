@@ -1,0 +1,16 @@
+<div class="question-container">
+  <button class="close" value="X"></button>
+
+  <textarea
+    class="title-edition"
+    type="text"
+    placeholder="Título de la pregunta... ejemplo: ¿Cuál es la velocidad del sonido?"
+    [(ngModel)]="questionTitle"
+    wrap="soft"
+    maxlength="200"
+  ></textarea>
+  <!-- Here is the answer content-->
+  <div class="answer-body">
+    <comp-icon type="multiple"></comp-icon>
+  </div>
+</div>

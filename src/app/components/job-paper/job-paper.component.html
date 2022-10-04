@@ -1,0 +1,15 @@
+<div class="paper-element">
+  <div class="element-header">
+    <p class="header-title">Examen de {{ className }}</p>
+    <p class="header-student">
+      Nombres: {{ studentName || "Fulanito de tal" }}
+
+    </p>
+  </div>
+  <div class="element-body">
+    <section class="body-section">
+      <ng-content select="ul, p"></ng-content>
+    </section>
+    <!-- <comp-question></comp-question> -->
+  </div>
+</div>
