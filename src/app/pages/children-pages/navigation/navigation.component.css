@@ -1,0 +1,38 @@
+.active {
+  border-bottom: 3px solid blue;
+}
+
+.option {
+  font-size: large;
+  color: black;
+  text-decoration: none;
+  height: calc(inherit - 3px);
+  cursor: pointer;
+  width: 150px;
+}
+
+.options {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-bar {
+  height: 30px;
+}
+
+/* .nav-bar {
+  width: 100%;
+} */
+/* @keyframes painting {
+  0% {
+    border-bottom: none;
+  }
+
+  100% {
+    border-bottom: 2px solid blue;
+  }
+} */

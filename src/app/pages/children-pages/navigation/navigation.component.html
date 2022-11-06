@@ -1,0 +1,12 @@
+<nav class="nav-bar">
+  <ul class="options" *ngIf="options.length > 0">
+    <li
+      class="option"
+      [routerLink]="option.route"
+      routerLinkActive="active"
+      *ngFor="let option of options"
+    >
+      {{ option.title }}
+    </li>
+  </ul>
+</nav>
