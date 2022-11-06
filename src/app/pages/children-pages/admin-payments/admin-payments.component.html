@@ -1,1 +1,42 @@
-<p>admin-payments works!</p>
+<div class="payments-container">
+  <nav class="filter">
+    <ul class="filter-list">
+      <li class="filter-item">
+        <p>Todos</p>
+      </li>
+      <li class="filter-item">
+        <p>Cancelados</p>
+      </li>
+      <li class="filter-item">
+        <p>Pendientes</p>
+      </li>
+      <li>
+        <!-- <div class="searching-container"> -->
+        <input
+          class="searching-bar"
+          type="text"
+          placeholder="buscar estudiante..."
+        />
+        <!-- </div> -->
+      </li>
+      <!-- <li class="filter-item">element</li> -->
+    </ul>
+  </nav>
+  <div class="payment-body">
+    <div class="element-list">
+      <ul class="student-list">
+        <li>
+          <div class="payment-entity" dirHighligth color="cyan">
+            <!-- <div class="payment-entity-info"></div> -->
+            <comp-profile></comp-profile>
+            <div class="payment-entity-info">
+              <p class="title">Nombre del estudiante</p>
+              <p class="grade">Grado</p>
+            </div>
+            <span class="payment-indicator"> <img src="../../../../favicon.ico" alt=""></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

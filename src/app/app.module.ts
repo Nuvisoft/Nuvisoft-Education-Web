@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './modules/app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AdministrationComponent } from './pages/administration/administration.component';
@@ -22,6 +22,11 @@ import { AdminPaymentsComponent } from './pages/children-pages/admin-payments/ad
 import { AdminSchoolComponent } from './pages/children-pages/admin-school/admin-school.component';
 import { AdminClassesComponent } from './pages/children-pages/admin-classes/admin-classes.component';
 import { AdminMembershipComponent } from './pages/children-pages/admin-membership/admin-membership.component';
+import { HighligthDirective } from './directives/highligth.directive';
+import { StudentsComponent } from './pages/students/students.component';
+import { StoreModule } from '@ngrx/store';
+import { NavigationComponent } from './pages/children-pages/navigation/navigation.component';
+import { ClassesPanelComponent } from './pages/children-pages/admin-school/classes-panel/classes-panel.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +47,18 @@ import { AdminMembershipComponent } from './pages/children-pages/admin-membershi
     AdminSchoolComponent,
     AdminClassesComponent,
     AdminMembershipComponent,
+    HighligthDirective,
+    StudentsComponent,
+    NavigationComponent,
+    ClassesPanelComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     DragDropModule,
-    FormsModule
+    FormsModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
