@@ -1,0 +1,35 @@
+.info-container {
+  /* margin-left: px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container>p {
+  margin-top: 50px;
+  width: 400px;
+  text-align: left;
+}
+
+.creator-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 180px;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+.creator-button:active {
+  background-color: darkblue;
+}
+
+
+.presentation-image {
+  border: none;
+  margin-top: 30px;
+  max-width: 400px;
+  max-height: 400px;
+}
