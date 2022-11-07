@@ -1,10 +1,3 @@
-.container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-
 .navigation-tab {
   width: 90%;
   border-bottom: 1px solid black;

@@ -9,6 +9,8 @@ import { ClassesPanelComponent } from '../components/child-components/classes-pa
 import { HomeComponent } from '../pages/home/home.component';
 import { JobsCreatorComponent } from '../pages/jobs-creator/jobs-creator.component';
 import { LoginComponent } from '../pages/login/login.component';
+import { TeachersPanelComponent } from '../components/child-components/teachers-panel/teachers-panel.component';
+import { StudentsPanelComponent } from '../components/child-components/students-panel/students-panel.component';
 
 const routes: Routes = [
   {
@@ -21,8 +23,8 @@ const routes: Routes = [
         component: AdminSchoolComponent,
         children: [
           { path: 'classes', component: ClassesPanelComponent },
-          { path: 'teachers', component: ClassesPanelComponent },
-          { path: 'students', component: ClassesPanelComponent },
+          { path: 'teachers', component: TeachersPanelComponent },
+          { path: 'students', component: StudentsPanelComponent },
           { path: 'timetable', component: ClassesPanelComponent },
           { path: 'statistics', component: ClassesPanelComponent },
         ],
