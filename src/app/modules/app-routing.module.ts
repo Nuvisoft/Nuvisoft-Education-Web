@@ -5,7 +5,7 @@ import { AdminClassesComponent } from '../pages/children-pages/admin-classes/adm
 import { AdminMembershipComponent } from '../pages/children-pages/admin-membership/admin-membership.component';
 import { AdminPaymentsComponent } from '../pages/children-pages/admin-payments/admin-payments.component';
 import { AdminSchoolComponent } from '../pages/children-pages/admin-school/admin-school.component';
-import { ClassesPanelComponent } from '../pages/children-pages/admin-school/classes-panel/classes-panel.component';
+import { ClassesPanelComponent } from '../components/child-components/classes-panel/classes-panel.component';
 import { HomeComponent } from '../pages/home/home.component';
 import { JobsCreatorComponent } from '../pages/jobs-creator/jobs-creator.component';
 import { LoginComponent } from '../pages/login/login.component';

@@ -26,7 +26,7 @@ import { HighligthDirective } from './directives/highligth.directive';
 import { StudentsComponent } from './pages/students/students.component';
 import { StoreModule } from '@ngrx/store';
 import { NavigationComponent } from './pages/children-pages/navigation/navigation.component';
-import { ClassesPanelComponent } from './pages/children-pages/admin-school/classes-panel/classes-panel.component';
+import { ClassesPanelComponent } from './components/child-components/classes-panel/classes-panel.component';
 import { ListContainerComponent } from './components/list-container/list-container.component';
 import { DescriptionComponent } from './components/description/description.component';
 import { TeachersPanelComponent } from './components/child-components/teachers-panel/teachers-panel.component';
