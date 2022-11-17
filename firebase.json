@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/nuvisoft-education-web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
